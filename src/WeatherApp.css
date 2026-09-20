@@ -1,0 +1,29 @@
+body {
+ margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+.bg-color {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: hwb(0 19% 12%);
+}
+.divider {
+  width: 100%;
+  border-top: 1px solid white;
+}
+.hero {              /* ya jo bhi class us blue sky wale section ki hai */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

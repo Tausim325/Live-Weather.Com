@@ -1,0 +1,130 @@
+.InfoBox {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.weather-card {
+ width: 100%;
+ background: transparent !important;
+ box-shadow: none !important;
+ border-radius: 0 !important;
+ border-radius: 20px !important;
+ margin-top: 30px;
+ font-size: 20px;
+}
+.weather-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  white-space: nowrap;
+  width: 100%; 
+}
+.city-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 40px !important;
+  font-weight: 400;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .city-heading {
+    font-size: 28px !important;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+}
+.degree {
+  display: block;
+  text-align: center;
+  font-size: 28px !important;
+  color: #ffffff;
+  font-weight: 400;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+.weather-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 10px 16px;
+  margin-top:20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow: 0 20px 60px rgba(4, 14, 30, 0.45);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+.weather-item:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.12);
+}
+.weather-icon {
+  color: #a9d3ee;
+  font-size: 22px !important;
+}
+.weather-label {
+  font-size: 0.78rem;
+  color: #c4d3e3;
+  order: 2;
+}
+.weather-value {
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #f4f8fb;
+  order: 3;
+}
+.err-msg {
+  color: red;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .weather-details {
+    flex-wrap: wrap;
+    gap: 25px 10px;
+    white-space: normal;
+  }
+  .weather-item {
+    width: calc(50% - 10px);
+  }
+}
+.feel .weather-feel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.country-time {
+  position: fixed;
+  top: 70px;
+  left: 46px;
+  font-size: 16px;
+  font-weight: 500;
+  z-index: 10;
+}
+.country-name {
+  margin-right: 5px;
+}
+.local-time {
+  margin-left: -4px;
+  position: relative;
+  top: 2px;
+}
