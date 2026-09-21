@@ -26,13 +26,13 @@ body {
 }
 .home-icon {
   color: rgb(255, 255, 255);
-  font-size: 44px !important;
+  font-size: 45px !important;
   cursor: pointer;
  
 }
 .Navbar h2 {
   color: whitesmoke;
-  font-size: 28px;
+  font-size: 24px;
   margin-left: 0;
   padding-top: 10px;
 }
@@ -54,7 +54,7 @@ body {
   }
 
   .home-icon {
-    font-size: 24px !important;
+    font-size: 30px !important;
     flex-shrink: 0;
   }
   .Navbar h2 {
