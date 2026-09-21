@@ -61,7 +61,7 @@ export default function SearchBox({ updateInfo, setError }) {
     try {
       evt.preventDefault();
       setCity("");
-      let newInfo = await getwheatherInfo(city);
+     let newInfo = await getwheatherInfo(city.trim());
       setError(false);
       updateInfo(newInfo);
     } catch (err) {
